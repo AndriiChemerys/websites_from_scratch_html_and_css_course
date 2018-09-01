@@ -1,4 +1,4 @@
-/* 
+/*
 
 Lesson 7 CSS
 ============
@@ -16,7 +16,7 @@ Andrii Chemerys
 body {
     padding: 40px;
     font-family: Georgia, Times, serif;
-    
+
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -40,7 +40,7 @@ h3 {
     text-align: center;
     word-spacing: 10px;
     text-align: center;
-    
+
 }
 
 blockquote {
@@ -140,4 +140,71 @@ code {
 
 #background-4 {
     background: url('images/skull_background.jpg') bottom left repeat-x;
+}
+
+/* Forms */
+
+#container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+form {
+  background-image: url('images/red_background.jpg');
+  padding: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+form fieldset {
+  background-image: url('images/blue_background.jpg');
+  padding: 40px;
+  border: solid 1px white;
+}
+
+form legend {
+  border: solid 1px #333;
+  background-image: url('images/blue_background.jpg');
+  padding: 5px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+    display: block;
+    margin-bottom: 20px;
+    -webkit-font-smoothing: antialised;
+    text-rendering: optimizeLegibility;
+}
+
+form label {
+    font-size: 11px;
+    text-transform: uppercase;
+    
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    padding: 10px;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    border: solid 1px #cd1d1d;
+    background-image: url('images/red_background.jpg');
+    
+}
+
+form textarea {
+    width: 300px;
+    height: 100px;
+}
+
+form input[type="submit"] {
+    border: none;
+    background: url(images/Button-Background.jpg) top left repeat-x;
+    height: 40px;
+    padding: 0 20px;
+    border: solid 1px #236be1;
+    color: white;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    cursor: pointer;
 }
