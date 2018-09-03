@@ -1,6 +1,6 @@
 /* ===============================
-   Author: {YOUR NAME HERE}
-   Date:   {DATE HERE}
+   Author: Andrii Chemerys
+   Date:   2018-09-03
    
    Notes:
    Hand coded for Build a Website
@@ -17,14 +17,123 @@
 
 /* General */
 
+body {
+    background: #f2f3ee url('../images/bg-tile.gif') top left repeat;
+    color: #4b2707;
+    font-size: 14px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
 
+.container {
+    width: 924px;
+    margin: 0 auto;
+    padding: 30px 24px;
+}
 
 /* Typography */
 
+h1, h2 {
+    color: #d17f38;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Love Ya Like A Sister', cursive;
+    line-height: 44px;    
+    margin: 0;
+}
 
+h1 {
+    text-align: center;
+    padding: 0 0 20px;
+    background: url('../images/header-divider.png') bottom center no-repeat;
+}
+
+h1 em {
+    font-style: normal;
+    color: #4b2707;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    margin: 0;
+}
+
+p.lead {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px 0;
+}
+
+p {
+    margin: 0;
+}
+
+a:link {
+    color: #d17f38;
+}
+
+a:hover {
+    color: #4b2707;
+}
+
+hr {
+    border: none;
+    height: 33px;
+    width: 333px;
+    margin: 30px auto;
+    background: url('../images/divider.png') center center no-repeat;
+}
 
 /* Header */
 
+header nav {
+    text-align: center;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    line-height: 141px;
+    
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #4b2707;
+    padding-top: 20px;
+    background: url('../images/tiny-donut.png') top center no-repeat;
+}
+
+header nav ul li#logo a {
+    display: block;
+    width: 292px;
+    height: 141px;
+    background: url('../images/logo.png') center center no-repeat;
+    text-indent: -9999px;
+}
+
+header nav ul li#logo a:hover {
+    padding: 0;
+    background: url('../images/logo-hover.png') center center no-repeat;
+}
 
 
 /* Hero */
