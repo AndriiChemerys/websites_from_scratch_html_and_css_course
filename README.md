@@ -10,4 +10,4 @@ Lesson 6
 Lesson 7
 Lesson 8
 Lesson 9
-![screenshot of project from lesson 9](img_final_scrn/lesson_9_final)
+![screenshot of project from lesson 9](img_final_scrn/lesson_9_final.jpg)
