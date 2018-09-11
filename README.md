@@ -7,9 +7,9 @@
 **Lesson 4.** A blog post style web page.  
 **Lesson 5.** My first website tiwh CSS.  
 **Lesson 6.** Minimalistic website.  
-**Lesson 7.** Website with reservation form.    <br/>
-![screenshot of project from lesson 7](img_final_scrn/lesson_7.jpg)    <br/>
-**Lesson 8.** Simple website - farmers market.    <br/>
-![screenshot of project from lesson 8](img_final_scrn/lesson_8.jpg)    <br/>
-**Lesson 9.** Final project - vegan donut shoppe website.    <br/>
-![screenshot of project from lesson 9](img_final_scrn/lesson_9_final.jpg)    <br/>
+**Lesson 7.** Website with reservation form.    <br/><br/>
+![screenshot of project from lesson 7](img_final_scrn/lesson_7.jpg)    <br/><br/>
+**Lesson 8.** Simple website - farmers market.    <br/><br/>
+![screenshot of project from lesson 8](img_final_scrn/lesson_8.jpg)    <br/><br/>
+**Lesson 9.** Final project - vegan donut shoppe website.    <br/><br/>
+![screenshot of project from lesson 9](img_final_scrn/lesson_9_final.jpg)    <br/><br/>
