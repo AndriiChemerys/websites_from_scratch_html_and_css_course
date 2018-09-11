@@ -1,7 +1,7 @@
 # websites_from_scratch_html_and_css_course
 Build Websites from Scratch with HTML &amp; CSS. Udemy course.
 
-Lesson 1
+Lesson 1  
 Lesson 2
 Lesson 3
 Lesson 4
