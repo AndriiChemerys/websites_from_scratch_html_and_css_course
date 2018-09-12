@@ -9,10 +9,16 @@
 :heavy_check_mark: **Lesson 6.** Minimalistic website.  
 :heavy_check_mark: **Lesson 7.** Website with reservation form.
 
-> Webpage printscreen
+> Lesson 7 webpage printscreen
 
 ![screenshot of the project from lesson 7](img_final_scrn/lesson_7.jpg)    <br/><br/>
-:heavy_check_mark: **Lesson 8.** Simple website - farmers market.    <br/><br/>
+:heavy_check_mark: **Lesson 8.** Simple website - farmers market.
+
+> Lesson 8 webpage printscreen
+
 ![screenshot of the project from lesson 8](img_final_scrn/lesson_8.jpg)    <br/><br/>
-:heavy_check_mark: **Lesson 9.** Final project - vegan donut shoppe website.    <br/><br/>
+:heavy_check_mark: **Lesson 9.** Final project - vegan donut shoppe website.    
+
+> Lesson 9 - final webpage printscreen
+
 ![screenshot of the project from lesson 9](img_final_scrn/lesson_9_final.jpg)    <br/><br/>
