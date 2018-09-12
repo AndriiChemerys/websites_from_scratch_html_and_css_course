@@ -7,8 +7,9 @@
 :heavy_check_mark: **Lesson 4.** A blog post style web page.  
 :heavy_check_mark: **Lesson 5.** My first website tiwh CSS.  
 :heavy_check_mark: **Lesson 6.** Minimalistic website.  
-:heavy_check_mark: **Lesson 7.** Website with reservation form. <br/><br/>
-> Webpage final printscreen
+:heavy_check_mark: **Lesson 7.** Website with reservation form.
+
+> Webpage printscreen
 
 ![screenshot of the project from lesson 7](img_final_scrn/lesson_7.jpg)    <br/><br/>
 :heavy_check_mark: **Lesson 8.** Simple website - farmers market.    <br/><br/>
