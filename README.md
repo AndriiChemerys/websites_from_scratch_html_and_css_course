@@ -11,14 +11,14 @@
 
 > Lesson 7 webpage screenshot
 
-![screenshot of the project from lesson 7](img_final_scrn/lesson_7.jpg)    <br/><br/>
+![screenshot of the project from lesson 7](img_final_scrn/website_from_scratch/lesson_7.jpg)    <br/><br/>
 **Lesson 8.** Simple website - farmers market. :heavy_check_mark: 
 
 > Lesson 8 webpage screenshot
 
-![screenshot of the project from lesson 8](img_final_scrn/lesson_8.jpg)    <br/><br/>
+![screenshot of the project from lesson 8](img_final_scrn/website_from_scratch/lesson_8.jpg)    <br/><br/>
 **Lesson 9.** Final project - vegan donut shoppe website. :heavy_check_mark:    
 
 > Lesson 9 - final webpage screenshot
 
-![screenshot of the project from lesson 9](img_final_scrn/lesson_9_final.jpg)    <br/><br/>
+![screenshot of the project from lesson 9](img_final_scrn/website_from_scratch/lesson_9_final.jpg)    <br/><br/>
