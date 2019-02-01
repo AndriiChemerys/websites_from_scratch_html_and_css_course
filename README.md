@@ -12,7 +12,7 @@
 > Lesson 7 webpage screenshot
 
 ![screenshot of the project from lesson 7](website_from_scratch_html_and_css_course/img_final_scrn/website_from_scratch/lesson_7.jpg)   
-<img src="website_from_scratch_html_and_css_course/img_final_scrn/website_from_scratch/lesson_7.jpg" width="400">
+<img src="website_from_scratch_html_and_css_course/img_final_scrn/website_from_scratch/lesson_7.jpg" width="50%">
 <br/><br/>
 **Lesson 8.** Simple website - farmers market. :heavy_check_mark: 
 
