@@ -1,5 +1,6 @@
-# websites_from_scratch_html_and_css_course
-## Build Websites from Scratch with HTML &amp; CSS. Udemy course.
+# udemy_front-end_courses
+## Front-end courses from Udemy
+### Build Websites from Scratch with HTML &amp; CSS. Udemy course.
 
 **Lesson 1.** My first web page! :heavy_check_mark:  
 **Lesson 2.** My first mini website. Basic html. :heavy_check_mark:   
