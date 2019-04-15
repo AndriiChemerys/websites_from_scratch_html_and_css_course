@@ -3,7 +3,7 @@
 
 - - -
 
-### 1. Build Websites from Scratch with HTML &amp; CSS. 
+### 1. Build Websites from Scratch with HTML &amp; CSS. :heavy_check_mark:    
 
 - - -
 
