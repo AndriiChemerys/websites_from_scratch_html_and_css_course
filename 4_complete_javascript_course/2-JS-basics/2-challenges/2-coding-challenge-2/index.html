@@ -10,10 +10,24 @@
 
 <body>
     <script>
-        let scoreJohn = (89 + 120 + 103) / 3;
-        let scoreMike = (116 + 94 + 123) / 3;
+        // let scoreJohn = (110 + 120 + 103) / 3;
+        // let scoreMike = (116 + 94 + 123) / 3;
+        // let scoreMary = (97 + 134 + 105) / 3;
+        let scoreJohn = 1112;
+        let scoreMike = 111;
+        let scoreMary = 111;
 
-        console.log(scoreJohn, scoreMike);
+        console.log(scoreJohn, scoreMike, scoreMary);
+
+        if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
+            console.log('John team wins with ' + scoreJohn + ' points');
+        } else if (scoreMike > scoreJohn && scoreMike > scoreMary) {
+            console.log('Mike team wins with ' + scoreMike + ' points');
+        } else if (scoreMary > scoreJohn && scoreMary > scoreMike) {
+            console.log('Mary team wins with ' + scoreMike + ' points');
+        } else {
+            console.log('There is a draw!');
+        }
 
     </script>
 
