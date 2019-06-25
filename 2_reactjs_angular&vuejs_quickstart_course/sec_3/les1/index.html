@@ -19,7 +19,8 @@
         <button v-on:click="changeName">Change name</button>
         <button v-on:click="addElement">New Element</button>
         <ul>
-            <li v-for="element in elements">A Element {{element}} </li>
+            <li v-for="element in elements"
+            v_bind:id="'el'+element">A Element {{element}} </li>
         </ul>
     </div>
 
