@@ -20,7 +20,9 @@
         <button v-on:click="addElement">New Element</button>
         <ul>
             <li v-for="element in elements"
-            v_bind:id="'el'+element">A Element {{element}} </li>
+            v_bind:id="'el'+element"
+            v_bind:style="{backgroundColor: }"
+            >A Element {{element}} </li>
         </ul>
     </div>
 
@@ -37,7 +39,10 @@
                 },
                 addElement: function() {
                     this.elements.push(this.elements.length + 1);
-                }
+                },
+                getColor: function(number) {
+                    return number % 2 == 0 ? 'green' : 'red';
+                } 
             }
         })
     </script>
