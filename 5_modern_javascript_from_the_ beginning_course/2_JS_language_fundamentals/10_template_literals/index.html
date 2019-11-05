@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        const name = "John";
+        const age = 30;
+        const job = "Web Dev";
+        const city = 'Miami';
+        let html;
+
+        // Without template strings (es5)
+
+        html = '<ul><li>Name: ' + name +'</li><li> Age:  ' + age + '</li><li> Job: ' + job + '</li></ul> City: ' + city + '</li></ul>';
+
+        document.body.innerHTML=html;
+
+        // With template strings (es6)
+
+        html = `
+        <ul>
+            <li>Name: ${name}</li>
+            <li>age: ${age}</li>
+            <li>job: ${job}</li>
+            <li>city: ${city}</li>
+        </ul>
+        `;
+
+    </script>
+
+
+</body>
+</html>
