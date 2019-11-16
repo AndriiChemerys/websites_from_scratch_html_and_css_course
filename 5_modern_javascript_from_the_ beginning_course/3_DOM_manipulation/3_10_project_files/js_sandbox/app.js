@@ -9,22 +9,22 @@ taskInput.value = '';
 // form.addEventListener('submit', runEvent);
 
 // Keydown
-//taskInput.addEventListener('keydown', runEvent);
+// taskInput.addEventListener('keydown', runEvent);
 // Keydown
 // taskInput.addEventListener('keyup', runEvent);
 // Keypress
 // taskInput.addEventListener('keypress', runEvent);
-// Focus
+// Focus - click in
 // taskInput.addEventListener('focus', runEvent);
-// Blur
+// Blur - click out
 // taskInput.addEventListener('blur', runEvent);
-// Cut
+// Cut 
 // taskInput.addEventListener('cut', runEvent);
 // Paste
 // taskInput.addEventListener('paste', runEvent);
 // Input
 // taskInput.addEventListener('input', runEvent);
-// Change
+// Change - for checkbox
 select.addEventListener('change', runEvent);
 
 function runEvent(e){
@@ -32,10 +32,10 @@ function runEvent(e){
 
   console.log(e.target.value);
 
-  heading.innerText = e.target.value;
+  // heading.innerText = e.target.value;
 
-  Get input value
+  // Get input value
   console.log(taskInput.value);
 
-  e.preventDefault();
+  // e.preventDefault();
 }
