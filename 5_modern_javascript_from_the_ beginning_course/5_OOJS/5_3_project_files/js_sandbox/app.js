@@ -84,13 +84,13 @@ function Citizen(country, citizenship) {
   this.citizenship = citizenship;
   // this.changeCitizenship = function(citizenship){
   //   this.citizenship = citizenship;
-  //   console.log(`Zmiana na obywatelstwo ${this.citizenship}`)
+  //   console.log(`Zmiana za pomocą metody w instancji na obywatelstwo ${this.citizenship}`)
   // }
 }
 
 Citizen.prototype.changeCitizenship = this.changeCitizenship = function(citizenship){
   this.citizenship = citizenship;
-  console.log(`Zmiana na obywatelstwo ${this.citizenship}`)
+  console.log(`Zmiana za pomocą metody w prototypie na obywatelstwo ${this.citizenship}`)
 }
 
 const zenek = new Citizen('Polska', 'polskie');
