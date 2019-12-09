@@ -6,33 +6,33 @@
 
 const id = 100;
 
-// EQUAL TO
-if(id == 100){
-  console.log('CORRECT');
-} else {
-  console.log('INCORRECT');
-}
+// // EQUAL TO
+// if(id == 100){
+//   console.log('CORRECT');
+// } else {
+//   console.log('INCORRECT');
+// }
 
-// NOT EQUAL TO
-if(id != 100){
-  console.log('CORRECT');
-} else {
-  console.log('INCORRECT');
-}
+// // NOT EQUAL TO
+// if(id != 100){
+//   console.log('CORRECT');
+// } else {
+//   console.log('INCORRECT');
+// }
 
-// EQUAL TO VALUE & TYPE
-if(id === 100){
-  console.log('CORRECT');
-} else {
-  console.log('INCORRECT');
-}
+// // EQUAL TO VALUE & TYPE
+// if(id === 100){
+//   console.log('CORRECT');
+// } else {
+//   console.log('INCORRECT');
+// }
 
-// EQUAL TO VALUE & TYPE
-if(id !== 100){
-  console.log('CORRECT');
-} else {
-  console.log('INCORRECT');
-}
+// // EQUAL TO VALUE & TYPE
+// if(id !== 100){
+//   console.log('CORRECT');
+// } else {
+//   console.log('INCORRECT');
+// }
 
 // Test if undefined
 // if(typeof id !== 'undefined'){
