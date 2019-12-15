@@ -81,23 +81,49 @@ console.log(c);
 /////////////////////////////////
 // Lecture: Strings
 
-let firstName = 'John';
-let lastName = 'Smith';
-const yearOfBirth = 1990;
+// let firstName = 'John';
+// let lastName = 'Smith';
+// const yearOfBirth = 1990;
 
-function calcAge(year) {
-    return 2016 - year;
-}
+// function calcAge(year) {
+//     return 2016 - year;
+// }
+
+// // ES5
+// console.log('This is ' + firstName + ' ' + lastName + '. He was born in ' + yearOfBirth + '. Today, he is ' + calcAge(yearOfBirth) + ' years old.');
+
+// // ES6
+// console.log(`This is ${firstName} ${lastName}. He was born in ${yearOfBirth}. Today, he is ${calcAge(yearOfBirth)} years old.`);
+
+// const n = `${firstName} ${lastName}`;
+// console.log(n.startsWith('j'));
+// console.log(n.endsWith('Sm'));
+// console.log(n.includes('oh'));
+// console.log(`${firstName} `.repeat(5));
+
+/////////////////////////////////
+// Lecture: Arrow functions
+
+
+const years = [1990, 1965, 1982, 1937];
 
 // ES5
-console.log('This is ' + firstName + ' ' + lastName + '. He was born in ' + yearOfBirth + '. Today, he is ' + calcAge(yearOfBirth) + ' years old.');
+var ages5 = years.map(function(el) {
+    return 2016 - el;
+});
+console.log(ages5);
+
 
 // ES6
-console.log(`This is ${firstName} ${lastName}. He was born in ${yearOfBirth}. Today, he is ${calcAge(yearOfBirth)} years old.`);
+let ages6 = years.map(el => 2016 - el);
+console.log(ages6);
 
-const n = `${firstName} ${lastName}`;
-console.log(n.startsWith('j'));
-console.log(n.endsWith('Sm'));
-console.log(n.includes('oh'));
-console.log(`${firstName} `.repeat(5));
+ages6 = years.map((el, index) => `Age element ${index + 1}: ${2016 - el}.`);
+console.log(ages6);
 
+ages6 = years.map((el, index) => {
+    const now = new Date().getFullYear();
+    const age = now - el;
+    return `Age element ${index + 1}: ${age}.`
+});
+console.log(ages6);
