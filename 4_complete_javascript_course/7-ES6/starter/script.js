@@ -172,22 +172,22 @@ console.log(c);
 // }
 // box66.clickMe();
 
-function Person(name) {
-    this.name = name;
-}
+// function Person(name) {
+//     this.name = name;
+// }
 
-// // ES5
-Person.prototype.myFriends5 = function(friends) {
+// // // ES5
+// Person.prototype.myFriends5 = function(friends) {
     
-    var arr = friends.map(function(el) {
-       return this.name + ' is friends with ' + el; 
-    }.bind(this));
+//     var arr = friends.map(function(el) {
+//        return this.name + ' is friends with ' + el; 
+//     }.bind(this));
     
-    console.log(arr);
-}
+//     console.log(arr);
+// }
 
-var friends = ['Bob', 'Jane', 'Mark'];
-new Person('John').myFriends5(friends);
+// var friends = ['Bob', 'Jane', 'Mark'];
+// new Person('John').myFriends5(friends);
 
 
 // // ES6
@@ -199,3 +199,39 @@ new Person('John').myFriends5(friends);
 // }
 
 // new Person('Mike').myFriends6(friends);
+
+/////////////////////////////////
+// Lecture: Destructuring
+
+//ES5
+let john = ['John', 26];
+// let name = john[0];
+// let age = john[1];
+
+//ES6 destructuring
+
+const [name, age] = ['John', 26];
+console.log(name);
+console.log(age);
+
+const obj = {
+    firstName: 'John',
+    lastName: 'Smith'
+};
+
+const {firstName, lastName} = obj;
+console.log(firstName);
+console.log(lastName);
+
+const {firstName: a, lastName: b} = obj;
+console.log(a);
+console.log(b);
+
+function calcAgeRetirement(year) {
+    const age = new Date().getFullYear()-year;
+    return [age, 65-age];
+}
+
+const [age, retiremnet] = calcAgeRetirement(1990);
+console.log(age2);
+console.log(retirement);
