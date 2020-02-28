@@ -1,0 +1,196 @@
+// .container {
+//     background-color: #eee;
+//     width: 700px;
+//     height: 700px;
+//     margin: 20px auto;
+
+//     display: grid;
+
+//     grid-template-rows: repeat(8, 1fr);
+//     grid-template-columns: repeat(4, 1fr);
+
+//     grid-gap: 20px;
+
+// }
+
+// .item {
+//     padding: 5px;
+//     font-size: 20px;
+//     font-family: sans-serif;
+//     color: white;
+
+//     &--1 {
+//         background-color: red;
+//         grid-row: 1/2;
+//         grid-column: 1/-1;
+//     }
+
+//     &--2 {
+//         background-color: yellowgreen;
+//         grid-row: 2/4;
+//         grid-column: 1/2;
+//     }
+
+//     &--3 {
+//         background-color: blueviolet;
+//         grid-area: 2/2/4/3;
+//     }
+
+//     &--4 {
+//         background-color: palevioletred;
+//         grid-area: 2/3/4/4;
+//     }
+
+//     &--5 {
+//         background-color: royalblue;
+//         grid-area: 2/4/-1/5;
+//     }
+
+//     &--6 {
+//         background-color: goldenrod;
+//         grid-area: 4/1/8/4;
+//     }   
+
+//     &--7 {
+//         background-color: goldenrod;
+//         grid-area: 8/1/9/4;        
+//     }
+
+// }
+
+//############################
+// Method 2: Line names
+//############################
+
+// .container {
+//     background-color: #eee;
+//     width: 700px;
+//     height: 700px;
+//     margin: 20px auto;
+
+//     display: grid;
+
+//     // grid-template-rows: repeat(8, 1fr);
+//     // grid-template-columns: repeat(4, 1fr);
+
+//     grid-template-rows: [header-start] 100px [header-end box-start] 200px [box-end main-start] 400px [main-end footer-start] 100px [footer-end];
+//     grid-template-columns: repeat(3, [col-start] 1fr [col-end]) 200px [grid-end];
+
+//     grid-gap: 20px;
+
+// }
+
+// .item {
+//     padding: 5px;
+//     font-size: 20px;
+//     font-family: sans-serif;
+//     color: white;
+
+//     &--1 {
+//         background-color: red;
+//         grid-column: col-start 1 / grid-end;
+//     }
+
+//     &--2 {
+//         background-color: yellowgreen;
+
+//     }
+
+//     &--3 {
+//         background-color: blueviolet;
+
+//     }
+
+//     &--4 {
+//         background-color: palevioletred;
+
+//     }
+
+//     &--5 {
+//         background-color: royalblue;
+//         grid-column: col-end 3 / grid-end;
+//         grid-row: box-start / main-end;
+//     }
+
+//     &--6 {
+//         background-color: goldenrod;
+//         grid-column: col-start 1 / col-end 3;
+
+
+//     }   
+
+//     &--7 {
+//         background-color: goldenrod;
+//         grid-column: col-start 1 / grid-end;
+
+
+//     }
+
+// }
+
+//############################
+// Method 3: Name grid areas
+//############################
+
+.container {
+    background-color: #eee;
+    width: 700px;
+    height: 700px;
+    margin: 20px auto;
+
+    display: grid;
+
+    grid-template-rows: 100px 200px 400px 100px;
+    grid-template-columns: repeat(3, 1fr) 200px;
+
+    grid-template-areas: "head head head head"
+                        "box1 box2 box3 side"
+                        "main main main side"
+                        "foot foot foot foot";
+
+    grid-gap: 20px;
+
+}
+
+.item {
+    padding: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+
+    &--1 {
+        background-color: red;
+        grid-area: head;
+    }
+
+    &--2 {
+        background-color: yellowgreen;
+        grid-area: box1;
+    }
+
+    &--3 {
+        background-color: blueviolet;
+        grid-area: box2;
+    }
+
+    &--4 {
+        background-color: palevioletred;
+        grid-area: box3;
+    }
+
+    &--5 {
+        background-color: royalblue;
+        grid-area: side;
+    }
+
+    &--6 {
+        background-color: goldenrod;
+        grid-area: main;
+    }
+
+    &--7 {
+        background-color: goldenrod;
+        grid-area: foot;
+    }
+
+}
