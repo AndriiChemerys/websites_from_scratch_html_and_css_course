@@ -12,45 +12,12 @@
     <div class="nav-bar"></div>
 
     <div id="app">
-        <div class="product">
-            <div class="product-image">
-                <img v-bind:src="image" alt="">
-                <!-- <a :href="link">Click me</a> -->
-            </div>
-
-            <div class="product-info">
-                <h1>{{title}}</h1>
-                <p v-if="inventory > 10">In Stock</p>
-                <p v-if="inventory <= 10 && inventory > 0">Almost Sold Out</p>
-                <p v-else :class="{ outOfStock: !inStock }">Out of Stock</p>
-                <span v-if="onSale">On Sale!</span>
-                <p>{{ sale }}</p>
-
-                <ul>
-                    <li v-for="detail in details">{{detail}}</li>
-                </ul>
-
-                <ul>
-                    <li v-for="size in sizes">{{ size }}</li>
-                </ul>
-
-                <div v-for="(variant, index) in variants" :key="variant.variantId" class="color-box"
-                    :style="{backgroundColor: variant.variantColor}" @mouseover="updateProduct(index)">
-                </div>
-
-                <button v-on:click="addToCart" :disabled="!inStock" :class="{disabledButton: !inStock}">Add to
-                    Cart</button>
-                <button v-on:click="removeFromCart">Remove from Cart</button>
-
-                <div class="cart">
-                    <p>Cart ({{cart}})</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- development version, includes helpful console warnings -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <product :premium="premium"></product>
+      <product :premium="premium"></product>
+      <product :premium="premium"></product>
+    </div> 
+    
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
     <script src="index.js"></script>
 </body>
 
