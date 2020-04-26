@@ -48,11 +48,11 @@ Vue.component('product', {
               >
             Add to cart
             </button>
-  
-            
-  
-         </div>  
-      
+
+            <button v-on:click="removeFromCart">
+            Remove to cart
+            </button>
+         </div>       
       </div>
      `,
     data() {
@@ -84,7 +84,11 @@ Vue.component('product', {
         },
         updateProduct: function(index) {  
             this.selectedVariant = index
+        },
+        removeFromCart: function () {
+             this.$emit('remove-from-cart', this.variants[this.selectedVariant].variantId)
         }
+        
       },
       computed: {
           title() {
@@ -114,7 +118,13 @@ Vue.component('product', {
       methods: {
         updateCart(id){
           this.cart.push(id);
-        }
+        },
+        removeItem(id) {
+          for(var i = this.cart.length - 1; i >= 0; i--) {
+            if (this.cart[i] === id) {
+               this.cart.splice(i, 1);
+            }
+          }
+        },
       }
-
   })
