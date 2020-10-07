@@ -4,6 +4,11 @@ document.getElementById('button2').addEventListener('click', getJson);
 
 document.getElementById('button3').addEventListener('click', getExternal);
 
+function handleErrors(res) {
+  if (!res.ok) throw new Error(res.error);
+  return res;
+}
+
 // Get local text file data
 function getText() {
   fetch('test.txt')
@@ -15,6 +20,7 @@ function getText() {
       console.log(data);
       document.getElementById('output').innerHTML = data;
     })
+    .then(handleErrors)
     .catch(function (err) {
       console.log(err);
     });
@@ -35,6 +41,7 @@ function getJson() {
       });
       document.getElementById('output').innerHTML = output;
     })
+    .then(handleErrors)
     .catch(function (err) {
       console.log(err);
     });
@@ -55,6 +62,7 @@ function getExternal() {
       });
       document.getElementById('output').innerHTML = output;
     })
+    .then(handleErrors)
     .catch(function (err) {
       console.log(err);
     });
