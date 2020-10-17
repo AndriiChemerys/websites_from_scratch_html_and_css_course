@@ -25,34 +25,3 @@ getTodos('todos/luigi.json').then(data=>{
     console.log('Promise rejected:', err)
 })
 
-// promise example 
-
-// getTodos('todos/luigi.json', (err, data) => {
-//     console.log(data);
-//     getTodos('todos/mario.json', (err, data) => {
-//         console.log(data);
-//         getTodos('todos/shaun.json', (err, data) => {
-//             console.log(data);
-//         });
-//     });
-// });
-
-const getSomething = () => {
-    return new Promise((resolve, reject)=>{
-        // fetch something
-        resolve('Some data');
-        reject('Some Error');
-    });
-};
-
-// getSomething().then((data)=>{
-//     console.log(data);
-// }, (err) => {
-//     console.log(err);
-// });
-
-getSomething().then(data => {
-    console.log(data);
-}).catch(err=>{
-    console.log(err);
-})
