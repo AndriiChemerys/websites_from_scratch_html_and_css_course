@@ -8,7 +8,9 @@ const getTodos = async () => {
     
 };
 
-getTodos();
+getTodos().then(data => {
+    console.log('resolved:', data);
+});
 
 // fetch('todos/luigi.json').then((response)=>{
 //     console.log('resolved', response);
