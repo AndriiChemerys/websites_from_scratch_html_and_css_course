@@ -20,6 +20,16 @@ form.addEventListener('submit', e => {
     result.querySelector('span').textContent = `${score}%`
     result.classList.remove('d-none');
 
+    let output = 0;
+    const timer = setInterval(() => {
+        result.querySelector('span').textContent = `${output}%`;
+        if(output===score){
+            clearInterval(timer);
+        } else {
+            output++;
+        }
+    }, 10);
+
 });
 
 // window object (global object)
@@ -33,6 +43,15 @@ form.addEventListener('submit', e => {
 // alert('hello');
 // window.alert('hello');
 
-setTimeout(()=>{
-    alert('Hello ninjas');
-}, 3000);
+// setTimeout(()=>{
+//     alert('Hello ninjas');
+// }, 3000);
+
+let i = 0;
+const timer = setInterval(() => {
+    console.log('Hello');
+    i++;
+    if(i === 5) {
+        clearInterval(timer);
+    }
+}, 1000);
