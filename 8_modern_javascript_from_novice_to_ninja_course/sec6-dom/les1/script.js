@@ -26,6 +26,29 @@
 
 // get elements by their tag name
 
-const paras = document.getElementsByTagName('p');
-console.log(paras);
-console.log(paras[1]);
+// const paras = document.getElementsByTagName('p');
+// console.log(paras);
+// console.log(paras[1]);
+
+const para = document.querySelector('p');
+
+// console.log(para.innerText);
+// para.innerText = 'Ninjas are awesome';
+
+const paras = document.querySelectorAll('p');
+
+paras.forEach(para => {
+    console.log(para.innerText);
+    para.innerText += ' new text';
+})
+
+const content = document.querySelector('.content');
+
+// console.log(content.innerHTML);
+// content.innerHTML = '<h2>This is a new H2</h2>';
+
+const people = ['mario', 'luigi', 'yoshi'];
+
+people.forEach(person => {
+    content.innerHTML += `<p>${person}</p>`
+})
