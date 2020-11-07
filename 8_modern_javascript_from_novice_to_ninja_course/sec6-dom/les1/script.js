@@ -53,13 +53,26 @@
 //     content.innerHTML += `<p>${person}</p>`
 // })
 
-const link = document.querySelector('a');
+// const link = document.querySelector('a');
 
-console.log(link.getAttribute('href'));
-link.setAttribute('href', 'https://www.thenetninja.co.uk');
-link.innerText='The Net Ninja Website';
+// console.log(link.getAttribute('href'));
+// link.setAttribute('href', 'https://www.thenetninja.co.uk');
+// link.innerText='The Net Ninja Website';
 
-const mssg = document.querySelector('p');
-console.log(mssg.getAttribute('class'));
-mssg.setAttribute('class', 'success');
-mssg.setAttribute('style', 'color: green;');
+// const mssg = document.querySelector('p');
+// console.log(mssg.getAttribute('class'));
+// mssg.setAttribute('class', 'success');
+// mssg.setAttribute('style', 'color: red;');
+
+const title = document.querySelector('h1');
+
+// title.setAttribute('style', 'margin: 50px;');
+
+console.log(title.style);
+console.log(title.style.color);
+
+title.style.margin = "50px";
+title.style.color = 'blue';
+title.style.fontSize = '60px';
+
+title.style.margin = '';
