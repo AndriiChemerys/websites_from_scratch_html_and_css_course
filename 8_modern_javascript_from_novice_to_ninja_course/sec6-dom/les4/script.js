@@ -11,12 +11,23 @@ button.addEventListener('click', ()=>{
     ul.prepend(li);
 });
 
-const items = document.querySelectorAll('li');
+// const items = document.querySelectorAll('li');
 
-items.forEach(item=>{
-    item.addEventListener('click', (e) => {
-        // e.target.style.textDecoration = 'line-through';
+// items.forEach(item=>{
+//     item.addEventListener('click', (e) => {
+//         // e.target.style.textDecoration = 'line-through';
+//         e.stopPropagation();
+//         e.target.remove();
+//         console.log('event in LI')
+//     });
+// });
+
+ul.addEventListener('click', e => {
+    // console.log('event in UL')
+    // console.log(e.target);
+    // console.log(e);
+    if(e.target.tagName === 'LI') {
         e.target.remove();
-    });
+    }
 });
 
