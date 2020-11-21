@@ -36,3 +36,8 @@ form.addEventListener('submit', e => {
 // let result = username.search(pattern);
 // console.log(result); 
 
+// live feedback
+
+form.username.addEventListener('keyup', e=>{
+    console.log(e.target.value, form.username.value);
+});
