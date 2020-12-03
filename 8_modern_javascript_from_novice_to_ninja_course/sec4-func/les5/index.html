@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="people">
+
+    </ul>
+    <script>
+        // get a reference to the 'ul'
+        const ul = document.querySelector('.people');
+
+        const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+        let html = ``;
+
+        people.forEach(function(person){
+            // create html template
+            html += `<li style="color: purple"> ${person} </li>`;
+        });
+
+        console.log(html);
+
+        ul.innerHTML = html;
+
+    </script>
+</body>
+</html>
