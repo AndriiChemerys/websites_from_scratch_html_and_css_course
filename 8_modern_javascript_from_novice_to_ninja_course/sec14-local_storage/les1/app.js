@@ -12,10 +12,22 @@ console.log(name, age);
 
 // updating data
 
-localStorage.setItem('name', 'luigi');
-localStorage.age = '40';
+// localStorage.setItem('name', 'luigi');
+// localStorage.age = '40';
+
+// name = localStorage.getItem('name');
+// age = localStorage.getItem('age');
+
+// console.log(name);
+
+// deleting data from local storage
+
+// localStorage.removeItem('name');
+
+localStorage.clear();
 
 name = localStorage.getItem('name');
 age = localStorage.getItem('age');
 
-console.log(name);
+// console.log(name);
+
