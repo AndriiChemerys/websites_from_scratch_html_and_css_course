@@ -8,6 +8,14 @@ function User(username, email){
     }
 }
 
+User.prototype.login = function(){
+    console.log(`${this.username} has logged in`);
+};
+
+User.prototype.logout = function(){
+    console.log(`${this.username} has logged out`);
+};
+
 // class User {
 //     constructor(username, email){
 //         // set up properties
