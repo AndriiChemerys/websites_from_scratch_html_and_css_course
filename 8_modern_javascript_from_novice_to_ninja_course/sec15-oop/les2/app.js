@@ -23,12 +23,13 @@ class User {
 class Admin extends User{
     constructor(username, email, title){
         super(username, email);
+        this.title = title;
     }
     deleteUser(user){
         users = users.filter(u => u.username !== user.username);
     }
 }
-1
+
 const userOne = new User('Mario', 'mario@mail');
 const userTwo = new User('Luigi', 'luigi@mail');
 const userThree = new Admin('Shaun', 'shaun@mail');
