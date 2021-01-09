@@ -16,6 +16,11 @@ User.prototype.logout = function(){
     console.log(`${this.username} has logged out`);
 };
 
+function Admin(username, email, title){
+    User.call(this, username, email);
+    this.title = title;
+}
+
 // class User {
 //     constructor(username, email){
 //         // set up properties
@@ -24,8 +29,15 @@ User.prototype.logout = function(){
 //     }
 // }
 
+Admin.prototype = Object.create(User.prototype);
+
+Admin.prototype.deleteUser = function(){
+    // delete user;
+};
+
 const userOne = new User('Mario', 'mario@mail');
 const userTwo = new User('Luigi', 'luigi@mail');
+const userThree = new Admin('Shaun', 'shaun@mail', 'black-belt-ninja');
 
 console.log(userOne, userTwo);
 
