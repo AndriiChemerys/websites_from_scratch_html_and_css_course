@@ -14,18 +14,46 @@ const addRecipe = (recipe, id) => {
     list.innerHTML += html;
 }
 
-db.collection('recipes').get().then((snapshot) => {
-    // when we have the data
-    // console.log(snapshot.docs[0].data());
-    snapshot.docs.forEach(doc => {
-        console.log(doc.id);
-        addRecipe(doc.data(), doc.id);
+const deleteRecipe = (id) => {
+    const recipes = document.querySelectorAll('li');
+    recipes.forEach(recipe => {
+        if(recipe.getAttribute('data-id') === id){
+            recipe.remove();
+        }
     });
-}).catch((err)=> {
-    console.log(err);
+}
+
+// get documents
+
+db.collection('recipes').onSnapshot(snapshot => {
+    // console.log(snapshot.docChanges());
+    snapshot.docChanges().forEach(change => {
+        // console.log(change);
+        const doc = change.doc;
+        // console.log(doc);
+        if (change.type === 'added'){
+            addRecipe(doc.data(), doc.id);
+        } else if (change.type === 'removed'){
+            deleteRecipe(doc.id);
+        }
+    })
 });
 
+// get documents (old ver)
+
+// db.collection('recipes').get().then((snapshot) => {
+//     // when we have the data
+//     // console.log(snapshot.docs[0].data());
+//     snapshot.docs.forEach(doc => {
+//         console.log(doc.id);
+//         addRecipe(doc.data(), doc.id);
+//     });
+// }).catch((err)=> {
+//     console.log(err);
+// });
+
 // add documents
+
 form.addEventListener('submit', e => {
     e.preventDefault();
 
