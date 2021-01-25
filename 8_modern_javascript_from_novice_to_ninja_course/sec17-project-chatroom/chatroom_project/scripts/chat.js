@@ -25,14 +25,15 @@ class Chatroom {
 
     getChats(){
         this.chats
-            .onSnapshot(snapshot => {
-                snapshot.docChanges().forEach(change => {
-                    if(change.type === 'added'){
-                        // update the ui
-                        callback(change.doc.data())
-                    }
-                })
-            });
+        .where('room', '==', this.room)
+        .onSnapshot(snapshot => {
+            snapshot.docChanges().forEach(change => {
+                if(change.type === 'added'){
+                    // update the ui
+                    callback(change.doc.data())
+                }
+            })
+        });
     }
 }
 
