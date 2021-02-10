@@ -1,0 +1,18 @@
+{
+  "name": "les1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "node_modules/.bin/babel src/index.js -w -o dist/assets/bundle.js",
+    "build": "babel src -d lib"
+  },
+  "author": "Andrii Chemerys",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13"
+  }
+}
