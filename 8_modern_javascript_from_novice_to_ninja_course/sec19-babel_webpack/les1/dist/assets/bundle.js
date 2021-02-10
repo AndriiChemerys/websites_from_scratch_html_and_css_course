@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("dom file");const e=document.querySelector("body"),o=()=>{e.style.background="peachpuff"},t=o=>{const t=document.createElement("h1");t.textContent=o,e.appendChild(t)};o(),t("Hellow, world from the dom file"),console.log("index file"),t("Test"),o(),console.log("mario@thenetninja.co.uk")})();
