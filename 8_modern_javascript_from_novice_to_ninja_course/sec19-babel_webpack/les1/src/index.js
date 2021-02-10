@@ -5,9 +5,5 @@ const greet = name => {
 greet('Mario');
 greet('Luigi');
 
-class User{
-    constructor(){
-        this.score = 0;
-    }
-}
+
 

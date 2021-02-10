@@ -6,13 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "node_modules/.bin/babel src/index.js -w -o dist/assets/bundle.js",
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "webpack": "node_modules/.bin/webpack"
   },
   "author": "Andrii Chemerys",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.12.13",
     "@babel/core": "^7.12.13",
-    "@babel/preset-env": "^7.12.13"
-  }
+    "@babel/preset-env": "^7.12.13",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {}
 }
