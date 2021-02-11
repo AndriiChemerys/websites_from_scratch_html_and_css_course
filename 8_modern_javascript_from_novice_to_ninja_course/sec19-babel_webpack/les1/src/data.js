@@ -10,5 +10,7 @@ const getPremUsers = (users) => {
     return users.filter(user=>user.premium);
 };
 
-export default users;
+// export default users;
+
+export {getPremUsers, users as default};
 
