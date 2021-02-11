@@ -6,5 +6,9 @@ const users = [
     {name: 'peach', premium: true},
 ];
 
+const getPremUsers = (users) => {
+    return users.filter(user=>user.premium);
+};
+
 export default users;
 

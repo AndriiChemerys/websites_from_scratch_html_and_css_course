@@ -1,8 +1,9 @@
 import './dom';
 import { styleBody, addTitle, contact} from './dom';
-import users from './data';
+import users, {getPremUsers} from './data';
 
-console.log(users);
+const premUsers = getPremUsers(users);
+console.log(users, premUsers);
 
 console.log('index file');
 addTitle('Test');
